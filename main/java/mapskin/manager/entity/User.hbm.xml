@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mapskin.manager.entity.User" table="user" schema="" catalog="manager">
+        <id name="id">
+            <column name="id" sql-type="int" not-null="true"/>
+            <generator class="identity"/>
+        </id>
+        <property name="loginname">
+            <column name="loginname" sql-type="varchar"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar"/>
+        </property>
+        <property name="username">
+            <column name="username" sql-type="varchar"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="varchar"/>
+        </property>
+        <property name="borndate">
+            <column name="borndate" sql-type="datetime"/>
+        </property>
+        <property name="company">
+            <column name="company" sql-type="varchar"/>
+        </property>
+        <property name="email">
+            <column name="email" sql-type="varchar"/>
+        </property>
+        <property name="mobile">
+            <column name="mobile" sql-type="varchar" length="11"/>
+        </property>
+        <property name="fax">
+            <column name="fax" sql-type="varchar"/>
+        </property>
+        <property name="tel">
+            <column name="tel" sql-type="varchar"/>
+        </property>
+        <property name="qq">
+            <column name="qq" sql-type="varchar" length="20"/>
+        </property>
+        <property name="division">
+            <column name="division" sql-type="varchar"/>
+        </property>
+        <property name="createtime">
+            <column name="createtime" sql-type="datetime"/>
+        </property>
+        <property name="action">
+            <column name="action" sql-type="varchar"/>
+        </property>
+        <property name="status">
+            <column name="status" sql-type="varchar"/>
+        </property>
+        <property name="createusername">
+            <column name="createusername" sql-type="varchar"/>
+        </property>
+        <property name="createuserid">
+            <column name="createuserid" sql-type="int"/>
+        </property>
+        <property name="createusercompany">
+            <column name="createusercompany" sql-type="varchar"/>
+        </property>
+        <property name="createuserip">
+            <column name="createuserip" sql-type="varchar"/>
+        </property>
+        <property name="createusermobile">
+            <column name="createusermobile" sql-type="varchar"/>
+        </property>
+        <property name="x1">
+            <column name="x1" sql-type="double" precision="22"/>
+        </property>
+        <property name="y1">
+            <column name="y1" sql-type="double" precision="22"/>
+        </property>
+        <property name="x">
+            <column name="x" sql-type="double" precision="22"/>
+        </property>
+        <property name="y">
+            <column name="y" sql-type="double" precision="22"/>
+        </property>
+        <property name="imei">
+            <column name="imei" sql-type="varchar"/>
+        </property>
+    </class>
+</hibernate-mapping>

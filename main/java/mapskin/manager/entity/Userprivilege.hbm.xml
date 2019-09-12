@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mapskin.manager.entity.Userprivilege" table="userprivilege" schema="" catalog="manager">
+        <id name="id">
+            <column name="id" sql-type="int" not-null="true"/>
+        </id>
+        <property name="userid">
+            <column name="userid" sql-type="int"/>
+        </property>
+        <property name="username">
+            <column name="username" sql-type="varchar"/>
+        </property>
+        <property name="privilegeid">
+            <column name="privilegeid" sql-type="int"/>
+        </property>
+        <property name="privilegename">
+            <column name="privilegename" sql-type="varchar"/>
+        </property>
+        <property name="createtime">
+            <column name="createtime" sql-type="datetime"/>
+        </property>
+        <property name="action">
+            <column name="action" sql-type="varchar"/>
+        </property>
+        <property name="status">
+            <column name="status" sql-type="varchar"/>
+        </property>
+        <property name="createusername">
+            <column name="createusername" sql-type="varchar"/>
+        </property>
+        <property name="createuserid">
+            <column name="createuserid" sql-type="int"/>
+        </property>
+        <property name="createusercompany">
+            <column name="createusercompany" sql-type="varchar"/>
+        </property>
+        <property name="createuserip">
+            <column name="createuserip" sql-type="varchar"/>
+        </property>
+        <property name="createusermobile">
+            <column name="createusermobile" sql-type="varchar"/>
+        </property>
+    </class>
+</hibernate-mapping>
